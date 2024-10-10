@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- font awsome 4 cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
 </head>
 <body>
     <!-- firtst we are doing the navbar section -->
@@ -26,6 +28,12 @@
                         <li><a href="">Account</a></li>
                     </ul>
                 </nav>
+                <figure> 
+                    <img src="assets/cart.png" alt="cart" width="30px" height="30px">
+                    <img class="menu-icon" src="assets/menu.png" alt="" width="30px" height="30px" onclick="menutoggle()">
+                </figure>
+                <!-- now implimenting the cart icon after the nav -->
+                
             </div>
             <div class="row">
                 <div class="col-2">
@@ -34,11 +42,348 @@
                     <a href="" class="btn">Explore Now &nbsp;&#8594;</a>
                 </div>
                 <div class="col-2">
-                        <img src="assets/image1.png" alt="">
+                    <img src="assets/image1.png" alt="">
                 </div>
             </div> 
             
         </div>
     </header>
+    <!-- yah here the header section is over -->
+     <!-- ---------- featured categories ------------ -->
+      <main>
+        <section class="categories">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="assets/category-1.jpg" alt="">
+                    </div>
+                    <div class="col-3">
+                        <img src="assets/category-2.jpg" alt="">
+                    </div>
+                    <div class="col-3">
+                        <img src="assets/category-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- -----------featured products--------- -->
+         <section class="small-container">
+            <h2 class="title">Featured Products</h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="assets/product-1.jpg" alt="">
+                    <h4>Red Printed T-Shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>₹440</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="assets/product-2.jpg" alt="">
+                    <h4>Sport Shoes</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>₹1300</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="assets/product-3.jpg" alt="">
+                    <h4>Track Pants</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                    <p>₹669</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="assets/product-4.jpg" alt="">
+                    <h4>Blue Polo T-Shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>₹599</p>
+                </div>
+            </div>
+    <!-- latest product  8 products-->
+            <h2 class="title">Latest Product</h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="assets/product-5.jpg" alt="">
+                    <h4>Grey Classic Sneaker</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>₹2199</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="assets/product-6.jpg" alt="">
+                    <h4>Puma Black T-Shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>₹1300</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="assets/product-7.jpg" alt="">
+                    <h4>Pairs Of HRX Socks</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                    <p>₹869</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="assets/product-8.jpg" alt="">
+                    <h4>Times Black Metal Watch</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>₹2899</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="assets/product-9.jpg" alt="">
+                    <h4>Gray Fossil Watch</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>₹2240</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="assets/product-10.jpg" alt="">
+                    <h4>Black Sport Boot</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>₹1900</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="assets/product-11.jpg" alt="">
+                    <h4>Gray Jogging Shoes</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                    <p>₹669</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="assets/product-12.jpg" alt="">
+                    <h4>Black Track Pants</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>₹999</p>
+                </div>
+            </div>
+         </section>
+         <!-- --------------offer---------- -->
+          <section class="offer">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="assets/exclusive.png" class="offer-img" alt="">
+                    </div>
+                    <div class="col-2">
+                        <p>Exclusively Available on RedStore</p>
+                        <h1>Smart Band 6</h1>
+                        <small>
+                            The Mi Smart Band 6 featured a 27% larger (than Mi Band 5) AMOLED color full-touch display with adjustable brightness, so everything is clear as can be.
+                        </small>
+                        <br>
+                        <a href="" class="btn">Buy Now &#8594;</a>
+                    </div>
+                </div>
+            </div>
+          </section>
+          <!-- -------testimonial section -------- -->
+          <section class="testimonial">
+            <div class="small-container">
+                <div class="row">
+                    <!-- First Testimonial -->
+                    <div class="col-3">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti labore natus asperiores consequuntur rerum fugiat quam quos, quaerat alias. Ipsa, labore architecto. Expedita alias voluptatibus enim ad quaerat, quidem deserunt!
+                        </p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <img src="assets/user-1.png" alt="">
+                        <h3>Megan Fox</h3>
+                    </div>
+        
+                    <!-- Second Testimonial -->
+                    <div class="col-3">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti labore natus asperiores consequuntur rerum fugiat quam quos, quaerat alias. Ipsa, labore architecto. Expedita alias voluptatibus enim ad quaerat, quidem deserunt!
+                        </p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <img src="assets/user-2.png" alt="">
+                        <h3>James Aman</h3>
+                    </div>
+        
+                    <!-- Third Testimonial -->
+                    <div class="col-3">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti labore natus asperiores consequuntur rerum fugiat quam quos, quaerat alias. Ipsa, labore architecto. Expedita alias voluptatibus enim ad quaerat, quidem deserunt!
+                        </p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <img src="assets/user-3.png" alt="">
+                        <h3>Anadi Armas</h3>
+                    </div>
+                </div>
+            </div>
+        </section>   
+        <!-----------brand widgets ---------  -->
+        <section class="brands">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <img src="assets/logo-godrej.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="assets/logo-oppo.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="assets/logo-coca-cola.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="assets/logo-paypal.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="assets/logo-philips.png" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+      </main>
+      <!-- ---------footer--------- -->
+      <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App For Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="assets/play-store.png" alt="">
+                        <img src="assets/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="assets/logo-white.png" alt="">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benifits of Sports Assecssible to the Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>    
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>    
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+
+                </div>
+            </div><hr>
+            <p class="copyright">Copyright 2024 @ redStore </p>
+        </div>
+      </footer>
+
+      <!-- -----js for toggle menu---- -->
+       <script>
+            let MenuItems = document.getElementById(MenuItems);
+            MenuItems.style.maxHeight = "0px";
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px"){
+                    MenuItems.style.maxHeight = "200px";
+                }
+                else{
+                    MenuItems.style.maxHeight = "0px"
+                }
+            }
+       </script>
 </body>
 </html>
